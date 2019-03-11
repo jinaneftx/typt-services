@@ -1,0 +1,8 @@
+spring: 
+  profiles: 
+    active: yum
+
+#mybatis
+mybatis:
+  #type-aliases-package: com.e.typt.core.dto
+  mapper-locations: classpath:mapping/**/*.xml

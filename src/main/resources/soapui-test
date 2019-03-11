@@ -1,0 +1,63 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.core.typt.e.com/">
+<soapenv:Header>
+   <authHeader>
+<userId>admin</userId>
+<userPass>123456</userPass>
+</authHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ws:testAPI>
+         <!--Optional:-->
+         <FWType>REST</FWType>
+         <!--Optional:-->
+         <FWName>ZBSZFGJJGLZX</FWName>
+         <!--Optional:-->
+         <methodName>queryGjjDWZHXX.api</methodName>
+         <!--Zero or more repetitions:-->
+         <args>token=2ad564d0481c4cca9fef54de7acf6cde,spnode=1000061</args>
+      </ws:testAPI>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.core.typt.e.com/">
+<soapenv:Header>
+   <authHeader>
+<userId>admin</userId>
+<userPass>123456</userPass>
+</authHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ws:testAPI>
+         <!--Optional:-->
+         <FWType>SOAP</FWType>
+         <!--Optional:-->
+         <FWName>CommonService3</FWName>
+         <!--Optional:-->
+         <methodName>sayObj</methodName>
+         <!--Zero or more repetitions:-->
+         <args>"Tom",20</args>
+      </ws:testAPI>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.core.typt.e.com/">
+  <soapenv:Header>
+   	<authHeader>
+		<userId>admin</userId>
+		<userPass>123456</userPass>
+	</authHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ws:commonMethod>
+         <!--Optional:-->
+         <FWName>CommonService3</FWName>
+         <!--Optional:-->
+         <methodName>sayObj</methodName>
+         <!--Optional:-->
+         <args>"Tom",20</args>
+      </ws:commonMethod>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.e.typt.core.mapper.ws.GjjTestTableMapper">
+	<select id="gjjTestTableXx" resultType="com.e.typt.core.entity.dto.ws.GjjTestTable">
+		select * from xxkc.gjj_test_table where sfzh=#{sfzh} and ywdjh=#{ywdjh}
+	</select>
+	<select id="gjjShTableXx" resultType="com.e.typt.core.entity.dto.ws.GjjShTable">
+		select * FROM xxkc.gjj_test_table t,xxkc.gjj_sh_table s WHERE t.sfzh=s.sfzh and t.sfzh=#{sfzh} and t.ywdjh=s.ywdjh AND t.ywdjh=#{ywdjh}
+	</select>
+</mapper>

@@ -1,0 +1,27 @@
+logging:
+  level:
+    com.e.typt: debug
+  file: d:/log.log
+  pattern:
+    file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.2.108:3306/typt?useSSL=false&useUnicode=yes&characterEncoding=UTF8
+    username: typt
+    password: Typt@123
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      max-lifetime: 1765000
+      maximum-pool-size: 15
+  
+  aop:
+    proxy-target-class: true
+    auto: true
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 1024
+  port: 8091
+cxf:
+  path: /soap
