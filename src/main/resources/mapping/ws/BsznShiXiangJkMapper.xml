@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.e.typt.core.mapper.ws.BsznShiXiangJkMapper">
+	<select id="taSpServicesGuideSel" resultType="com.e.typt.core.entity.dto.ws.TaSpServicesGuide">
+		select * from xxkc.TA_SP_SERVICES_GUIDE where APPROVE_ID=#{approveId}
+	</select>
+	<select id="taSpApproveInfoSel" resultType="com.e.typt.core.entity.dto.ws.TaSpApproveInfo">
+		select * FROM xxkc.TA_SP_APPROVE_INFO WHERE APPROVE_ID=#{approveId}
+	</select>
+	<select id="taSpRightsInfoSel" resultType="com.e.typt.core.entity.dto.ws.TaSpRightsInfo">
+		select * FROM xxkc.TA_SP_RIGHTS_INFO WHERE RIGHTS_ID=#{rightsId}
+	</select>
+	<select id="taSpApproveMaterialSel" resultType="com.e.typt.core.entity.dto.ws.TaSpApproveMaterial">
+		select * FROM xxkc.ta_sp_approve_material WHERE APPROVE_ID=#{approveId}
+	</select>
+	<select id="taSpApproveResultSel" resultType="com.e.typt.core.entity.dto.ws.TaSpApproveResult">
+		select * FROM xxkc.ta_sp_approve_result WHERE ATTACH_ID=#{attachId}
+	</select>
+</mapper>
